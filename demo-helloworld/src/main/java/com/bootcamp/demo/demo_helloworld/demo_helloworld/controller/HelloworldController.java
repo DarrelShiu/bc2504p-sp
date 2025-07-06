@@ -8,11 +8,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @ResponseBody
-// @RequestMapping(value = "/api/v1")
+@RequestMapping(value = "/api/v1")
 public class HelloworldController {
   
   @GetMapping(value = "/hello") // api endpoint (avoid duplicate endpoint URL)
-  public String helloworld() {
-    return "Hello. Welcome to Spring Boot!!!!";
+  // public String helloworld() {
+  //   return "Hello. Welcome to Spring Boot v123456!!!!";
+  // }
+
+   public String helloworld() {
+    return "hello world" + 123;
   }
 }
